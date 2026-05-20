@@ -2,6 +2,9 @@
 
 Lightweight knowledge persistence for AI agents. Notes survive across sessions, enabling agents to build on prior findings instead of re-discovering the same patterns.
 
+<img width="869" height="923" alt="image" src="https://github.com/user-attachments/assets/d2ce3e04-9033-4361-8fcf-288718de6213" />
+
+
 ## Stack
 
 - **API** — FastAPI + SQLite + [fastembed](https://github.com/qdrant/fastembed) (`BAAI/bge-small-en-v1.5` via ONNX — no PyTorch)

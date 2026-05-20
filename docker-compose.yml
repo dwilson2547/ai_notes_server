@@ -1,0 +1,16 @@
+services:
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+
+  ui:
+    build: ./ui
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+    restart: unless-stopped

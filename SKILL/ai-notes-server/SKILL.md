@@ -14,9 +14,25 @@ A shared knowledge layer. Notes persist across sessions so agents can build on p
 
 ## When to Use
 
-**Start of every session** — search for notes relevant to the current task before doing any work.
+**Before starting any task** — search for relevant notes first. Use broad terms,
+the environment, and component names as search queries.
 
-**End of every session** (or after a significant finding) — save key learnings as notes.
+**Immediately after resolving a non-obvious problem** — if the fix required more
+than one attempt, wasn't in documentation, or involved an undocumented behavior,
+write a note before moving on. Don't wait until end of session.
+
+**After any significant architectural or configuration decision** — capture what
+was decided and why, especially if alternatives were considered and rejected.
+
+**When discovering environment-specific behavior** — version quirks, 
+toolchain gotchas, platform-specific workarounds.
+
+**After any tool call sequence longer than ~5 steps that reached a successful resolution** — 
+pause and evaluate whether the path to resolution was non-obvious.
+If so, note it immediately.
+
+**Do not write a note for** — things easily found in official docs, 
+routine tasks with expected outcomes, or anything that's already noted.
 
 ---
 

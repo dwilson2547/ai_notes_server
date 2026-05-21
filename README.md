@@ -58,3 +58,17 @@ docker compose logs -f api
 ## Agent Skill
 
 A skill file for agents is at [.agents/skills/ai-notes-server/SKILL.md](../../../.agents/skills/ai-notes-server/SKILL.md).
+
+## CI Docker Publish
+
+A GitHub Actions workflow publishes both `api` and `ui` images to Docker Hub on:
+- pushes to `main`
+- manual trigger via **Actions → Publish Docker Images → Run workflow**
+
+Required repository secrets:
+- `DOCKERHUB_USERNAME`
+- `DOCKERHUB_TOKEN` (Docker Hub access token)
+
+Published tags:
+- `<DOCKERHUB_USERNAME>/ai-notes-server-api:latest`
+- `<DOCKERHUB_USERNAME>/ai-notes-server-ui:latest`

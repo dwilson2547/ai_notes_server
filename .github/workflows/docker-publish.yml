@@ -8,6 +8,7 @@ name: Publish Docker Images
 
 permissions:
   contents: read
+  actions: write
 
 jobs:
   build-and-push:

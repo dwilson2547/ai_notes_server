@@ -211,6 +211,8 @@ def import_notes(notes: list[NoteImport], db: Session = Depends(get_db)):
             tags=item.tags,
             content=item.content,
             embedding=embeddings.encode(text),
+            created_at=item.created_at,
+            archived_at=item.archived_at,
         )
         db.add(note)
         imported += 1

@@ -22,6 +22,8 @@ class NoteImport(BaseModel):
     title: str
     tags: list[str] = []
     content: str
+    created_at: Optional[datetime] = None
+    archived_at: Optional[datetime] = None
 
 
 class NoteOut(BaseModel):

@@ -1,6 +1,7 @@
 services:
   api:
     build: ./api
+    image: dwilson2547/ai-notes-api:latest
     ports:
       - "8000:8000"
     volumes:
@@ -9,6 +10,7 @@ services:
 
   ui:
     build: ./ui
+    image: dwilson2547/ai-notes-ui:latest
     ports:
       - "3000:80"
     depends_on:

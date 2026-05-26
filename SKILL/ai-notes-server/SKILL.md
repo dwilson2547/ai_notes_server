@@ -1,9 +1,9 @@
 ---
 name: ai-notes-server
 description: >
-  YOU MUST use this skill at the start and end of every task and after every resolved problem.
   The AI Notes Server (http://localhost:8000) is the persistent knowledge layer for this workspace.
-  Always check notes before starting work. Always save findings after non-trivial resolutions.
+  Before starting any task, assess whether additional context is needed to complete it confidently.
+  If yes, search notes. Always save findings after non-trivial resolutions.
   Trigger phrases: check notes, save findings, persist knowledge, notes server.
 applyTo: "**"
 ---
@@ -19,7 +19,10 @@ A shared knowledge layer. Notes persist across sessions so agents can build on p
 
 ## When to Use
 
-**Before starting any task** — search for relevant notes first. Do not skip this step.
+**Before starting a task** — assess whether additional context is needed to complete it confidently.
+If the task involves infrastructure, deployment, scraping patterns, known gotchas, or anything
+with project-specific history, search notes. Skip the lookup for straightforward tasks where
+the codebase alone is sufficient.
 
 **After resolving a non-obvious problem** — save findings before moving on.
 
